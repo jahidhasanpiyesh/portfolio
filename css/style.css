@@ -1865,12 +1865,12 @@ body.light hr.separator {
     margin-top: 35px !important;
   }
 
-  .fixed-block {
+/*   .fixed-block {
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 1000;
     animation: jackInTheBox 1s ease-in-out 3s;
-}
+} */
 
 }
