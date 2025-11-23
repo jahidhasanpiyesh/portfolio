@@ -1,0 +1,48 @@
+/* ======================================================
+   THEME SKIN : YELLOW GREEN
+   Author : Jahid Hasan
+   ====================================================== */
+
+/* ----- MAIN COLOR ----- */
+:root {
+  --skin-color: #9acd32;   /* Yellow Green */
+}
+
+/* ----- ELEMENTS USING SKIN COLOR ----- */
+
+body.dark #nav-bar .active,
+.btn:hover,
+.progress-bar span,
+.timeline-dot,
+.service-icon,
+.portfolio-filter button.active,
+.social-icons a:hover,
+.scroll-btn span,
+.home-title span,
+.contact-icon i,
+.blog-title:hover {
+  color: var(--skin-color);
+}
+
+.btn,
+.progress-bar span,
+.timeline-dot,
+.text-highlight,
+.home-title span,
+.portfolio-filter button.active,
+.portfolio-item:hover .portfolio-info,
+.blog-btn,
+.social-icons a:hover,
+.scroll-btn,
+.contact-submit button:hover {
+  background: var(--skin-color);
+}
+
+.btn,
+.portfolio-filter button.active,
+.scroll-btn,
+.social-icons a:hover,
+.portfolio-item:hover .portfolio-info,
+.contact-submit button:hover {
+  border-color: var(--skin-color);
+}
