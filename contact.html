@@ -162,12 +162,12 @@
                                         <span class="button-icon fa fa-send"></span>
                                     </button>
                                 </div>
-                                <div class="col-12 form-message">
-                                    <span class="output_message text-center font-weight-600 text-uppercase"></span>
+                                <div class="col-12 form-mess">
+                                    <span class="output_mess text-center font-weight-600 text-uppercase"></span>
 
                                     <!-------------------  Copy writing Sections  ------------------------------------>
                                     <h1 class="footer h6 font-weight-bold text-secondary"
-                                        style="text-align:center; font-size:1rem;">
+                                        style="text-align:center; font-size:1rem; margin-top:20px;">
                                         Copyright©
                                         <script>document.write(new Date().getFullYear())</script>
                                         <a> Md Jahid Hasan </a>
@@ -175,6 +175,7 @@
                                             class="fas fa-heart animate__animated animate__pulse animate__faster animate__infinite infinite"></i>&nbsp;All
                                         rights reserved
                                     </h1>
+
                                     <!----------------------  End Sections --------------------- -->
                                 </div>
                             </div>
@@ -191,7 +192,7 @@
         document.getElementById('contactForm').addEventListener('submit', function (e) {
             e.preventDefault(); // Prevent default form submission
 
-            const output = this.querySelector('.output_message');
+            const output = this.querySelector('.output_mess');
             output.textContent = "Sending...";
             output.style.color = "blue";
 

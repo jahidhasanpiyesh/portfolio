@@ -1325,6 +1325,18 @@ body.light .header ul.icon-menu li.icon-box:hover,
   padding-right: 10px;
 }
 
+.output_mess{
+  display: inline;
+    padding: 0;
+    border: none;
+    font-size: 0.9rem;
+}
+
+.form-mess{
+    text-align: center;
+}
+
+
 /*** Blog ***/
 
 .blog .main-content {
