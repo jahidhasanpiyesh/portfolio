@@ -103,7 +103,50 @@
         <span class="title-bg">posts</span>
     </section>
 
-    <p class="text-center">No Blog Project</p>
+
+    <!-- blog posts section section automatic update every post -->
+    <section class="main-content">
+        <div class="container">
+            <div id="blog-posts-container" class="row">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        async function loadPosts() {
+            try {
+                const response = await fetch('posts.json');
+                const data = await response.json();
+                const container = document.getElementById('blog-posts-container');
+                container.innerHTML = "";
+
+                data.forEach(post => {
+                    const postHTML = `
+                <div class="col-12 col-md-6 col-lg-4 mb-30">
+                    <article class="post-container">
+                        <div class="post-thumb">
+                            <a href="${post.link}" target="_blank">
+                                <img src="${post.img}" class="img-fluid" alt="${post.title}">
+                            </a>
+                        </div>
+                        <div class="post-content">
+                            <h3><a href="${post.link}" target="_blank">${post.title}</a></h3>
+                            <p>${post.desc}</p>
+                            <a href="${post.link}" target="_blank" class="blog-btn">View Post <i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </article>
+                </div>`;
+                    container.innerHTML += postHTML;
+                });
+            } catch (error) {
+                console.log("Error loading JSON:", error);
+            }
+        }
+        loadPosts();
+    </script>
+    <!-- end of blog posts section -->
+
+    
     <!-- Template JS Files -->
     <script src="js/jquery-3.5.0.min.js"></script>
     <script src="js/styleswitcher.js"></script>
