@@ -86,7 +86,8 @@ body.light .preloader .black_wall {
 }
 
 a {
-  color: #ffc107;
+  /* ffc107 */
+  color: #FFC107;  
   text-decoration: none;
   background-color: transparent;
 }
@@ -568,7 +569,7 @@ body.light hr.separator {
 
 .services-box .service-item i {
   font-size: 45px;
-  color: #ffb400;
+  color: #FFC107;
   width: 90px;
   height: 90px;
   line-height: 90px;
