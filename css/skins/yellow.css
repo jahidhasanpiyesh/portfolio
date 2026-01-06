@@ -7,6 +7,8 @@
 .title-section h1 span,
 #menu li.active a,
 body.light #menu li.active a,
+#menu li a:hover,
+body.light #menu li a:hover,
 .blog .post-container:hover .post-content .entry-header h3 a,
 .blog .post-content .entry-header h3 a:hover,
 .contact .custom-span-contact i,
@@ -36,7 +38,7 @@ body.light .header ul.icon-menu li.icon-box.active, body.light  .header ul.icon-
 .portfolio .slideshow .carousel-indicators li.active,
 .button:before,
 .button-icon{
-	background-color: ##ffc107;
+	background-color: #ffc107;
 }
 
 .contact .contactform input[type=text]:focus,
